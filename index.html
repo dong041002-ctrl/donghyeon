@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GIFT PICK · 선물 궁합 편집숍</title>
+<meta name="description" content="띠, 사주 오행, MBTI로 그 사람의 선물 운을 점쳐 어울리는 선물을 골라주는 선물 궁합 편집숍 GIFT PICK.">
+<meta name="theme-color" content="#D2335C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GIFT PICK · 선물에도 궁합이 있다니까요?">
+<meta property="og:description" content="띠 · 사주 오행 · MBTI로 고르는 선물 궁합 편집숍">
+<meta property="og:image" content="assets/icons/icon-512.png">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="GIFT PICK">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <filter id="gpB3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="gpB8" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="gpB16" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14"/></filter>
+  <filter id="gpGrain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .08"/></feComponentTransfer></filter>
+  <linearGradient id="gpSpec" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".8"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <linearGradient id="gpGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E2B5"/><stop offset=".5" stop-color="#C9A45C"/><stop offset="1" stop-color="#8E6E34"/></linearGradient>
+  <linearGradient id="gpGoldH" x1="0" x2="1"><stop offset="0" stop-color="#8E6E34"/><stop offset=".35" stop-color="#F3E2B5"/><stop offset=".6" stop-color="#C9A45C"/><stop offset="1" stop-color="#7A5C2A"/></linearGradient>
+  <linearGradient id="gpBlack" x1="0" x2="1"><stop offset="0" stop-color="#111"/><stop offset=".3" stop-color="#4A4446"/><stop offset=".45" stop-color="#2A2527"/><stop offset="1" stop-color="#0C0B0B"/></linearGradient>
+</defs></svg>
+
+<div class="notice"><div class="wrap"><span>재미로 보는 선물 궁합</span><span aria-hidden="true">✦</span><span>이번 주 한정 드롭 진행 중</span><span aria-hidden="true">✦</span><span>5만 원 이상 무료배송</span></div></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="GIFT PICK 홈">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5" fill="#D2335C"/><rect x="2" y="6" width="20" height="4.5" rx="1" fill="#A8213F"/><rect x="11" y="6" width="2" height="15" fill="#FFD45C"/><path d="M12 6C9.5 2.5 6.5 3.5 8 5.6 8.8 6.6 11 6.3 12 6ZM12 6c2.5-3.5 5.5-2.5 4 .4-.8 1-3 .7-4 .4Z" fill="#FFD45C" stroke="#A8213F" stroke-width=".6"/></svg>
+      GIFT PICK
+    </a>
+    <nav class="main" aria-label="주요 메뉴">
+      <a href="#app">선물 궁합</a>
+      <a href="#luck">오늘의 운세</a>
+      <a href="#drop">한정 드롭</a>
+      <a href="#mbti">MBTI 사전</a>
+      <a href="#collection">전체 선물</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-btn" id="openCart" type="button" aria-label="장바구니 열기">장바구니 <span class="badge" id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="sticker s-butter">재미로 보는 선물 궁합 ✦</span>
+        <h1>선물에도<br><mark>궁합</mark>이 있다니까요?</h1>
+        <p class="lead">띠, 사주 오행, MBTI로 그 사람의 ‘선물 운’을 점쳐드려요. 고르는 건 GIFT PICK이, 마음은 당신이.</p>
+        <div class="cta-row">
+          <a class="btn btn-rose" href="#app">선물 궁합 보러 가기</a>
+          <a class="btn btn-ghost" href="#drop">이번 주 한정 드롭</a>
+        </div>
+        <div class="facts">
+          <div><b>960가지 조합</b><span>12띠 × 5오행 × 16 MBTI</span></div>
+          <div><b>매일 바뀌는 운세</b><span>자정마다 띠별 행운 선물 교체</span></div>
+          <div><b>매주 한정 드롭</b><span>공방 수작업, 수량 한정</span></div>
+        </div>
+      </div>
+      <div class="tarot" aria-hidden="true">
+        <div class="tc tc1"><span class="tc-k">띠</span><b class="tc-h">卯</b><span>토끼띠</span></div>
+        <div class="tc tc3"><span class="tc-k">오행</span><b class="tc-h">火</b><span>불의 기운</span></div>
+        <div class="tc tc2"><span class="tc-k">MBTI</span><div class="mini" id="heroMini"></div><b class="tc-m">ENFP</b></div>
+        <div class="tc-result">오늘의 선물: 버섯 무드등 · 궁합 96점</div>
+        <span class="star st1">✦</span><span class="star st2">✦</span><span class="star st3">✧</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec luck-sec" id="luck">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sticker s-lilac">오늘의 운세</span>
+          <h2>오늘의 띠별 선물 운세</h2>
+          <p>자정이 지나면 운세도, 행운의 선물도 바뀌어요. 내 띠랑 그 사람 띠부터 확인해 보세요.</p>
+        </div>
+        <div id="luckDate"></div>
+      </div>
+      <div class="luck-grid" id="luckGrid"></div>
+    </div>
+  </section>
+
+  <section class="app-sec" id="app">
+    <div class="wrap">
+      <div class="app-copy">
+        <span class="sticker s-mint">GIFT PICK 앱</span>
+        <h2 class="h2">선물 궁합 머신에<br>동전 대신 질문 4개</h2>
+        <p>오른쪽 화면이 GIFT PICK 앱 그대로예요. 관계, 태어난 해, MBTI, 예산을 넣으면 띠와 오행, 성격 유형까지 따져서 선물 세 개를 뽑아드려요.</p>
+        <ol class="steps">
+          <li><div><b>WHO?</b><span>친구, 연인, 부모님, 동료</span></div></li>
+          <li><div><b>띠 · 오행</b><span>태어난 해로 띠와 사주 오행을 계산해요</span></div></li>
+          <li><div><b>MBTI</b><span>모르면 건너뛰어도 괜찮아요</span></div></li>
+          <li><div><b>BUDGET</b><span>1만 원부터 10만 원까지</span></div></li>
+        </ol>
+        <p class="hint" style="margin-top:16px">재미로 보는 궁합이에요. 진짜 운명은 고르는 사람의 정성이 정해요.</p>
+        <div class="stores">
+          <button class="store" type="button" data-store="App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8ZM14.1 5.8c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3Z"/></svg><span><small>출시 준비 중</small>App Store</span></button>
+          <button class="store" type="button" data-store="Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M4 2.8v18.4c0 .4.4.6.7.4l10.1-9.6L4.7 2.4c-.3-.2-.7 0-.7.4Zm12.2 7.8L6.8 2.7l11 6.3-1.6 1.6Zm0 2.8 1.6 1.6-11 6.3 9.4-7.9Zm2.9-3.6 2.5 1.5c.5.3.5 1.1 0 1.4l-2.5 1.5-1.8-2.2 1.8-2.2Z"/></svg><span><small>출시 준비 중</small>Google Play</span></button>
+        </div>
+      </div>
+      <div class="phone" aria-label="GIFT PICK 앱 화면">
+        <div class="screen">
+          <div class="island" aria-hidden="true"></div>
+          <div class="app-head">
+            <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1.5" fill="#D2335C"/><rect x="2" y="6" width="20" height="4.5" rx="1" fill="#A8213F"/><rect x="11" y="6" width="2" height="15" fill="#FFD45C"/></svg>GIFT PICK</span>
+            <button class="app-restart" type="button" id="appRestart">처음부터</button>
+          </div>
+          <div class="progress" id="appProgress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="app-body" id="appBody" aria-live="polite"></div>
+          <div class="app-foot" id="appFoot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec drop-sec" id="drop">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sticker s-rose">LIMITED DROP</span>
+          <h2 id="dropTitle">이번 주 한정 드롭</h2>
+          <p>공방에서 손으로 만들어서 이번 주엔 이만큼만 준비했어요. 다 나가면 다음 드롭까지 기다려야 해요.</p>
+        </div>
+        <div class="countdown" id="countdown" role="timer" aria-label="이번 드롭 마감까지 남은 시간"></div>
+      </div>
+      <div class="drop-grid" id="dropGrid"></div>
+    </div>
+  </section>
+
+  <section class="sec mbti-sec" id="mbti">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sticker s-butter">MBTI 선물 사전</span>
+          <h2>그 사람 MBTI, 알고 있다면</h2>
+          <p>유형을 누르면 그 유형이 좋아할 선물 세 개를 바로 보여드려요.</p>
+        </div>
+      </div>
+      <div class="mbti-grid" id="mbtiGrid" role="group" aria-label="MBTI 유형 고르기"></div>
+      <div class="mbti-panel" id="mbtiPanel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="collection">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="sticker s-white">전체 선물</span>
+          <h2>궁합 말고, 직접 골라볼래요</h2>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="상황별로 보기"></div>
+      </div>
+      <div class="toolbar">
+        <span id="fCount" class="hint"></span>
+        <div class="tb-sel">
+          <label for="fCat">종류</label>
+          <select id="fCat"><option>전체</option><option>향기</option><option>뷰티·바디</option><option>리빙</option><option>푸드</option><option>패션·잡화</option><option>문구·취미</option><option>플라워·식물</option></select>
+          <label for="fRel">받는 분</label>
+          <select id="fRel"><option>전체</option><option>친구</option><option>연인</option><option>부모님</option><option>동료</option></select>
+          <label for="fBud">예산</label>
+          <select id="fBud"><option value="0">전체</option><option value="10000">1만 원 이하</option><option value="30000">3만 원 이하</option><option value="50000">5만 원 이하</option><option value="100000">10만 원 이하</option></select>
+          <label for="fSort">정렬</label>
+          <select id="fSort"><option value="rec">추천순</option><option value="new">신상품순</option><option value="low">낮은 가격순</option><option value="high">높은 가격순</option></select>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <div class="more-row"><button class="btn btn-ghost" type="button" id="moreBtn">더 보기</button></div>
+    </div>
+  </section>
+
+  <section class="sec" id="how" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">How it works</div>
+          <h2>GIFT PICK은 고르고, 공방은 만들어 보내요</h2>
+          <p>GIFT PICK은 창고 없이 운영하는 선물 편집숍이에요. 제휴 공방과 브랜드의 상품 중 선물로 좋은 것만 골라 소개하고, 주문이 들어오면 만든 곳에서 GIFT PICK 포장 기준에 맞춰 바로 보내드려요.</p>
+        </div>
+      </div>
+      <ol class="flow">
+        <li><b>세 가지 질문으로 고르기</b><span>관계 · 상황 · 예산으로 후보를 3개까지 좁혀요.</span><span class="who-does">고객 · GIFT PICK 추천 앱</span></li>
+        <li><b>주문과 결제</b><span>스마트스토어나 계좌이체로 결제하고, 포장과 카드를 골라요.</span><span class="who-does">GIFT PICK</span></li>
+        <li><b>제작과 포장</b><span>공방이 주문을 받아 GIFT PICK 박스와 리본, 손글씨 카드로 포장해요.</span><span class="who-does">제휴 공방</span></li>
+        <li><b>공방에서 바로 발송</b><span>만든 곳에서 받는 분께 곧장 보내요. 송장은 GIFT PICK이 안내해요.</span><span class="who-does">제휴 공방 → 받는 분</span></li>
+      </ol>
+      <div class="model">
+        <div><h3>재고 없이 운영해요</h3><p>미리 사서 쌓아두지 않아서, 계절마다 좋은 공방을 새로 찾아 컬렉션을 바꿀 수 있어요.</p></div>
+        <div><h3>대신 더 깐깐하게 골라요</h3><p>모든 상품은 직접 써보고 포장 상태까지 확인한 뒤에 올려요. 선물로 받았을 때 기분 좋은지가 기준이에요.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap-sec" id="wrapping">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Finishing touch</div>
+          <h2>받는 순간까지 선물이 되도록</h2>
+          <p>모든 주문은 기본 포장으로 보내드려요. 주문서에서 프리미엄 래핑과 손글씨 메시지 카드를 더할 수 있어요.</p>
+        </div>
+      </div>
+      <div class="wrap-grid">
+        <div class="w-item">
+          <svg viewBox="0 0 84 84" aria-hidden="true"><rect width="84" height="84" rx="18" fill="#F2E5E2"/><rect x="18" y="34" width="48" height="34" rx="2" fill="#D9C2A5"/><rect x="15" y="26" width="54" height="11" rx="2" fill="#C9AE8E"/><rect x="40" y="26" width="4" height="42" fill="#FBF7F2"/></svg>
+          <h3>기본 포장</h3>
+          <p>크라프트 박스와 완충재, 브랜드 스티커로 단정하게 포장해요.</p>
+          <span class="w-price">무료</span>
+        </div>
+        <div class="w-item">
+          <svg viewBox="0 0 84 84" aria-hidden="true"><rect width="84" height="84" rx="18" fill="#F2E5E2"/><rect x="18" y="36" width="48" height="32" rx="2" fill="#AE3650"/><rect x="15" y="28" width="54" height="11" rx="2" fill="#8C2A3E"/><rect x="40" y="28" width="4" height="40" fill="#F3E1D6"/><path d="M42 28c-6-9-13-6-10-1 1.5 2.4 7 1.8 10 1Zm0 0c6-9 13-6 10-1-1.5 2.4-7 1.8-10 1Z" fill="#F3E1D6"/></svg>
+          <h3>프리미엄 래핑</h3>
+          <p>로즈 하드박스에 리넨 리본을 묶고, 드라이플라워 한 줄기를 꽂아드려요.</p>
+          <span class="w-price">상품당 +3,500원</span>
+        </div>
+        <div class="w-item">
+          <svg viewBox="0 0 84 84" aria-hidden="true"><rect width="84" height="84" rx="18" fill="#F2E5E2"/><rect x="16" y="26" width="52" height="36" rx="2" fill="#FBF7F2"/><path d="M16 28 42 46 68 28" fill="none" stroke="#C9B6B0" stroke-width="2"/><circle cx="42" cy="46" r="5" fill="#AE3650"/></svg>
+          <h3>메시지 카드</h3>
+          <p>남겨주신 문장을 손글씨로 옮겨 적어 선물과 함께 넣어드려요. 최대 120자.</p>
+          <span class="w-price">+1,500원</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="payment">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Payment</div>
+          <h2>편한 방법으로 결제하세요</h2>
+          <p>네이버 스마트스토어에서 카드·네이버페이로 결제하거나, 계좌이체로 바로 주문할 수 있어요.</p>
+        </div>
+      </div>
+      <div class="pay-grid">
+        <div class="pay-card">
+          <h3><span class="nv-mark" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M1 1h2.6l3 4.3V1H9v8H6.4l-3-4.3V9H1z" fill="#fff"/></svg></span>네이버 스마트스토어</h3>
+          <ol>
+            <li>상품 상세나 주문서에서 ‘스마트스토어에서 결제’를 누르세요.</li>
+            <li>같은 상품의 스마트스토어 페이지가 열려요.</li>
+            <li>카드, 네이버페이, 포인트로 결제하고 배송 조회까지 네이버에서 확인할 수 있어요.</li>
+          </ol>
+          <a class="btn btn-nv" id="storeLink" href="#" target="_blank" rel="noopener"><span class="nv-mark" aria-hidden="true"><svg viewBox="0 0 10 10"><path d="M1 1h2.6l3 4.3V1H9v8H6.4l-3-4.3V9H1z" fill="#fff"/></svg></span>스마트스토어 둘러보기</a>
+        </div>
+        <div class="pay-card">
+          <h3>무통장 입금 · 계좌이체</h3>
+          <ol>
+            <li>주문서에 받는 분 정보를 적고 ‘계좌이체로 주문’을 누르세요.</li>
+            <li id="depositRule">주문번호와 결제 금액이 나오면 24시간 안에 아래 계좌로 입금하세요.</li>
+            <li>입금이 확인되면 제휴 공방에서 영업일 기준 1~2일 안에 출고해요.</li>
+          </ol>
+          <div class="acct">
+            <div><div class="hint" id="bankName"></div><code id="bankAcct"></code></div>
+            <button class="copy" type="button" data-copy="acct">계좌번호 복사</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><div><div class="eyebrow">FAQ</div><h2>자주 묻는 질문</h2></div></div>
+      <div class="faq">
+        <details open><summary>선물 궁합, 믿어도 되나요?</summary><p>재미로 봐주세요! 띠와 오행은 태어난 해의 간지로 계산하고, MBTI와 관계·예산을 함께 따져 상품을 골라요. 음력 설 전에 태어났다면 그 전 해의 띠로 보는 게 맞아요. 결과가 마음에 안 들면 ‘다시 점치기’를 눌러 다른 조합도 보세요.</p></details>
+        <details><summary>한정 드롭은 뭔가요?</summary><p>제휴 공방이 그 주에 만들 수 있는 만큼만 파는 상품이에요. 매주 일요일 밤 12시에 마감하고, 수량이 다 나가면 다음 드롭까지 기다려야 해요. 운세 럭키박스는 드롭에서만 살 수 있어요.</p></details>
+        <details><summary>받는 분 주소를 몰라도 보낼 수 있나요?</summary><p>네. 주문서에서 ‘주소를 몰라요’를 고르고 받는 분 이름과 연락처만 적어주세요. 입금이 확인되면 GIFT PICK이 받는 분께 문자로 선물 소식을 전하고 주소를 받아 보내드려요. 받는 분이 3일 안에 주소를 남기지 않으면 보내는 분께 먼저 연락드려요.</p></details>
+        <details><summary>입금은 언제까지 해야 하나요?</summary><p>주문 후 24시간 안에 주문서에 적은 입금자명으로 입금해 주세요. 기한이 지나면 주문이 자동으로 취소돼요. 입금자명이 다르면 카카오톡 채널로 주문번호를 알려주세요.</p></details>
+        <details><summary>언제 받을 수 있나요?</summary><p>입금·결제 확인 후 영업일 기준 1~2일 안에 출고하고, 보통 출고 다음 날 도착해요. 제주·도서산간은 1~2일 더 걸릴 수 있어요. 상품마다 만든 공방에서 따로 출발해서, 여러 개를 주문하면 따로 도착할 수 있어요. 날짜를 맞춰야 하는 선물은 배송 메모에 희망일을 적어주세요.</p></details>
+        <details><summary>GIFT PICK에서 직접 만든 상품인가요?</summary><p>아니요. GIFT PICK은 제휴 공방과 브랜드의 상품을 골라 소개하고 판매하는 편집숍이에요. 상품은 만든 곳에서 GIFT PICK 포장 기준에 맞춰 직접 보내고, 주문·교환·환불 안내는 GIFT PICK이 맡아요.</p></details>
+        <details><summary>스마트스토어 결제와 계좌이체는 뭐가 다른가요?</summary><p>스마트스토어는 카드·네이버페이·포인트로 결제하고 네이버에서 배송 조회까지 할 수 있어요. 계좌이체는 이 사이트에서 바로 주문하고, 주소를 몰라도 보내기와 손글씨 메시지 카드를 함께 신청할 수 있어요.</p></details>
+        <details><summary>각인이나 메시지 카드는 어떻게 신청하나요?</summary><p>각인 문구는 주문서의 ‘배송 메모 · 각인 문구’ 칸에, 카드 내용은 ‘메시지 카드 넣기’를 켜고 적어주세요. 적은 문장을 손글씨로 옮겨 적어 선물과 함께 넣어드려요.</p></details>
+        <details><summary>교환이나 환불이 되나요?</summary><p>상품을 받은 날로부터 7일 안에 청약철회를 신청할 수 있어요. 단순 변심이면 왕복 배송비는 고객님이 부담해요. 각인 상품과 메시지 카드를 작성한 주문은 제작이 시작된 뒤에는 취소할 수 없어요.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="biz" id="business">
+    <div class="wrap">
+      <div>
+        <span class="sticker s-butter">기업 선물 · 공방 입점</span>
+        <h2>기업 선물 견적과 공방 입점 제안</h2>
+        <p>명절, 입사·퇴사, 고객 감사 선물을 20개부터 주문받아요. 수량별 할인, 로고 스티커, 개별 배송까지 한 번에 견적 드려요. 선물하기 좋은 물건을 만드는 공방과 브랜드의 입점 제안도 기다려요.</p>
+      </div>
+      <div class="biz-contact">
+        <span class="biz-k">견적 · 입점 문의</span>
+        <code id="bizEmail"></code>
+        <button class="copy" type="button" data-copy="email">이메일 주소 복사</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="logo" href="#top" style="margin-bottom:14px">GIFT PICK</a>
+      <p style="margin:12px 0 0">선물에도 궁합이 있다니까요?<br>띠 · 사주 오행 · MBTI로 고르는 선물 궁합 편집숍</p>
+    </div>
+    <div>
+      <h4>고객 안내</h4>
+      <ul>
+        <li>운영 시간 평일 10:00–17:00 (점심 12:30–13:30)</li>
+        <li>카카오톡 채널 <span id="kakaoId"></span></li>
+        <li>배송비 3,000원 · 5만 원 이상 무료</li>
+        <li>제주·도서산간 추가 배송비 있음</li>
+        <li>상품은 제휴 공방에서 직접 발송</li>
+      </ul>
+    </div>
+    <div>
+      <h4>교환 · 환불</h4>
+      <ul>
+        <li>상품 수령 후 7일 이내 청약철회 가능</li>
+        <li>단순 변심 반품 시 왕복 배송비 고객 부담</li>
+        <li>각인·메시지 카드 작성 상품은 제작 후 취소 불가</li>
+      </ul>
+    </div>
+    <div class="legal">
+      <span>상호 기프트픽 (GIFT PICK)</span>
+      <span>대표 신동현</span>
+      <span>주소 경기도 안양시 만안구 양화로37번길 34 (연성대학교)</span>
+      <span>이메일 dong041002@naver.com</span>
+      <span>사업자등록번호 <span class="ph">등록 예정</span></span>
+      <span>통신판매업신고 <span class="ph">신고 예정</span></span>
+      <span>이용약관</span><span><b>개인정보처리방침</b></span>
+      <span class="copyright">© 2026 기프트픽. 띠·오행·MBTI 궁합은 재미로 즐겨주세요.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="빠른 메뉴"><a class="btn btn-rose" href="#app">선물 궁합 보기</a><button class="btn btn-primary" type="button" id="mbarCart">장바구니 <span class="badge" id="cartCount2">0</span></button></nav>
+
+<!-- 장바구니 -->
+<dialog class="drawer" id="cartDlg" aria-labelledby="cartTitle">
+  <div class="d-head"><h2 id="cartTitle">장바구니</h2><button class="x" type="button" data-close aria-label="닫기"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3 3 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button></div>
+  <div class="d-body" id="cartBody"></div>
+  <div class="d-foot" id="cartFoot"></div>
+</dialog>
+
+<!-- 상품 상세 -->
+<dialog class="sheet small" id="pdDlg" aria-label="상품 상세">
+  <div id="pdBody"></div>
+</dialog>
+
+<!-- 주문서 -->
+<dialog class="sheet" id="coDlg" aria-labelledby="coTitle">
+  <div class="d-head"><h2 id="coTitle">주문서</h2><button class="x" type="button" data-close aria-label="닫기"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3 3 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button></div>
+  <div id="coBody"></div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
